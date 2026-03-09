@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Abdullah Javed | Game Developer</title>
+<title>Abdullah Javed | Unity Game Developer</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-font-family:Arial;
+font-family:Arial, sans-serif;
 background:#0f172a;
 color:white;
-margin:0;
+line-height:1.6;
 }
 
 header{
 text-align:center;
-padding:60px;
+padding:80px 20px;
 background:#020617;
 }
 
-h1{
-font-size:42px;
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+color:#94a3b8;
+font-size:18px;
 }
 
 section{
-max-width:900px;
+max-width:1100px;
 margin:auto;
-padding:40px;
+padding:60px 20px;
 }
 
 h2{
 color:#38bdf8;
+margin-bottom:25px;
 border-bottom:1px solid #334155;
 padding-bottom:10px;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
-border-radius:8px;
-margin-top:20px;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#334155;
+padding:10px 16px;
+border-radius:20px;
+font-size:14px;
+}
+
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.game{
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+}
+
+.game img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.game-info{
+padding:15px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+color:#94a3b8;
 }
 
 a{
@@ -52,18 +107,25 @@ text-decoration:none;
 <body>
 
 <header>
+
 <h1>Abdullah Javed</h1>
-<p>Unity Game Developer (C#)</p>
-<p>Mobile Games for Android & iOS</p>
+<p>Unity Game Developer (C#) | Android & iOS</p>
+<p>Lahore, Pakistan</p>
+
 </header>
 
 <section>
 
 <h2>About Me</h2>
+
 <div class="card">
+
 <p>
-Unity Game Developer specializing in mobile games using C#. I build complete 2D and 3D games for Android and iOS, handling gameplay systems, physics, AI, UI, animations, and optimization.
+Unity Game Developer specializing in mobile game development using C#. 
+I build complete 2D and 3D games for Android and iOS including gameplay systems, physics, AI, UI, and performance optimization. 
+I also work on existing projects to improve architecture, fix bugs, and add features while ensuring smooth performance on real mobile devices.
 </p>
+
 </div>
 
 </section>
@@ -71,15 +133,71 @@ Unity Game Developer specializing in mobile games using C#. I build complete 2D 
 <section>
 
 <h2>Skills</h2>
-<div class="card">
-<ul>
-<li>Unity Engine</li>
-<li>C#</li>
-<li>2D & 3D Game Development</li>
-<li>Gameplay Systems</li>
-<li>Mobile Optimization</li>
-<li>Android & iOS Builds</li>
-</ul>
+
+<div class="skills">
+
+<div class="skill">Unity Engine</div>
+<div class="skill">C#</div>
+<div class="skill">2D Game Development</div>
+<div class="skill">3D Game Development</div>
+<div class="skill">Mobile Optimization</div>
+<div class="skill">Gameplay Systems</div>
+<div class="skill">AI Systems</div>
+<div class="skill">Physics Systems</div>
+<div class="skill">Android Builds</div>
+<div class="skill">iOS Builds</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Games</h2>
+
+<div class="games">
+
+<div class="game">
+
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+
+<div class="game-info">
+
+<h3>Space Shooter</h3>
+<p>Fast paced 2D arcade shooter built in Unity.</p>
+
+</div>
+
+</div>
+
+
+<div class="game">
+
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8">
+
+<div class="game-info">
+
+<h3>Racing Game</h3>
+<p>Mobile racing game with physics based driving.</p>
+
+</div>
+
+</div>
+
+
+<div class="game">
+
+<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f">
+
+<div class="game-info">
+
+<h3>Adventure Game</h3>
+<p>3D exploration game with character controller and AI.</p>
+
+</div>
+
+</div>
+
 </div>
 
 </section>
@@ -89,13 +207,21 @@ Unity Game Developer specializing in mobile games using C#. I build complete 2D 
 <h2>Experience</h2>
 
 <div class="card">
-<p><b>Files Technology — Unity Developer</b></p>
-<p>Worked on gameplay systems, bug fixing, feature development, and performance optimization.</p>
+
+<h3>Files Technology — Unity Developer</h3>
+<p>
+Worked on mobile game development including gameplay systems, debugging, feature development, and performance optimization.
+</p>
+
 </div>
 
 <div class="card">
-<p><b>Freelance Unity Developer — Fiverr</b></p>
-<p>Delivered Unity mobile game projects to international clients.</p>
+
+<h3>Freelance Unity Developer — Fiverr</h3>
+<p>
+Delivered Unity game projects to international clients and improved existing projects with clean scalable architecture.
+</p>
+
 </div>
 
 </section>
@@ -103,9 +229,12 @@ Unity Game Developer specializing in mobile games using C#. I build complete 2D 
 <section>
 
 <h2>Education</h2>
+
 <div class="card">
+
 <p>BS Software Engineering</p>
 <p>National University of Sciences and Technology (NUST)</p>
+
 </div>
 
 </section>
@@ -113,13 +242,21 @@ Unity Game Developer specializing in mobile games using C#. I build complete 2D 
 <section>
 
 <h2>Contact</h2>
+
 <div class="card">
+
 <p>Email: abdullahjaved1124@gmail.com</p>
 <p>GitHub: <a href="https://github.com/abdullahhjvd">github.com/abdullahhjvd</a></p>
-<p>Location: Lahore, Pakistan</p>
+
 </div>
 
 </section>
+
+<footer>
+
+<p>© 2026 Abdullah Javed | Unity Game Developer</p>
+
+</footer>
 
 </body>
 </html>
